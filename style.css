@@ -303,9 +303,8 @@ footer .contact-me img {
     left: 0;
   }
   .humberger {
-    width: 10%;
     display: block;
-    margin-left: 1rem;
+    margin-right: 1rem;
     padding: 1rem;
   }
   .humberger.active .bar:nth-child(2) {
