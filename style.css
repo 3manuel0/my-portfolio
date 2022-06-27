@@ -7,9 +7,12 @@
   font-family: "Roboto", sans-serif;
   z-index: 1;
 }
+html,
+body {
+  overflow-x: hidden;
+}
 body {
   position: relative;
-  overflow-x: hidden;
 }
 h1 {
   margin: 0;
@@ -134,7 +137,7 @@ p {
   color: white;
 }
 .img {
-  background: url("pngwing.com.png");
+  background: url("other-pics/pngwing.com.png");
   background-position: center;
   background-size: contain;
   flex-grow: 1;
