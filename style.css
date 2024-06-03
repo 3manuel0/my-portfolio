@@ -20,6 +20,7 @@ h1 {
   margin-bottom: 1rem;
   text-align: center;
 }
+
 h2 {
   margin-top: 1rem;
   font-size: 2.1rem;
@@ -172,14 +173,12 @@ p {
   min-width: 380px;
 }
 .skill-logos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 2rem;
+  display: grid;
+  margin-top: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 2rem;
 }
 .logo {
-  width: 4rem;
   height: 4rem;
   background-size: 100% !important;
   background-repeat: no-repeat !important;
@@ -274,7 +273,18 @@ footer .contact-me img {
   width: 100%;
   height: 100%;
 }
-@media (max-width: 900px) {
+.project a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: black;
+}
+.project .date {
+  text-align: center !important;
+}
+.project a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 1060px) {
   .navbar {
     justify-content: space-between;
   }
@@ -362,9 +372,13 @@ footer .contact-me img {
   .grid-container {
     grid-template-columns: repeat(1, 1fr);
   }
+  footer {
+    padding: 1rem 0;
+  }
   footer .container {
-    flex-direction: column;
     align-items: center;
+    width: 100%;
+    padding: 2rem 1rem;
   }
 }
 @media (min-width: 1300px) {
@@ -374,4 +388,4 @@ footer .contact-me img {
   .grid-container {
     grid-template-columns: repeat(3, 1fr);
   }
-} ;
+}
