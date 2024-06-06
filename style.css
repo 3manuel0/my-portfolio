@@ -172,6 +172,9 @@ p {
   flex-grow: 1;
   min-width: 380px;
 }
+.skills {
+  margin-top: 1rem;
+}
 .skill-logos {
   display: grid;
   margin-top: 1rem;
